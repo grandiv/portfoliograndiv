@@ -1,12 +1,25 @@
 // components
 import WorkSlider from "../../components/WorkSlider";
 import Bulb from "../../components/Bulb";
+import ImageModal from "../../components/ImageModal";
+
+// react hooks
+import React, { useState } from "react";
 
 // framer motion
 import { motion } from "framer-motion";
 import { fadeIn } from "../../variants";
 
 const Work = () => {
+  const [selectedImage, setSelectedImage] = useState(null);
+
+  const openModal = (title, description, screenshots) => {
+    setSelectedImage({ title, description, screenshots });
+  };
+
+  const closeModal = () => {
+    setSelectedImage(null);
+  };
   return (
     <div className="h-full bg-primary/30 py-36 flex items-center">
       <div className="container mx-auto">
@@ -44,8 +57,16 @@ const Work = () => {
             exit="hidden"
             className="w-full xl:max-w-[65%]"
           >
-            <WorkSlider />
+            <WorkSlider handleImageClick={openModal} />
           </motion.div>
+          {/* Modal */}
+          <ImageModal
+            isOpen={selectedImage !== null}
+            closeModal={closeModal}
+            title={selectedImage?.title}
+            description={selectedImage?.description}
+            screenshots={selectedImage?.screenshots || []}
+          />
         </div>
       </div>
       <Bulb />

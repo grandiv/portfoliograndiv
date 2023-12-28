@@ -49,3 +49,34 @@
     @apply w-full h-[180px] p-6 rounded-lg resize-none;
   }
 }
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+:root {
+  --vs-primary: 29 92 255;
+}
+
+.dialog-modal {
+  @apply flex items-center justify-center fixed w-full h-full z-[9999] backdrop-blur-[5px] left-0 top-0;
+  background: rgba(0, 0, 0, 0.5);
+}
+.dialog-content {
+  @apply max-w-[80%] max-h-[80%] relative m-auto pt-12 p-12 rounded-[20px] border-0
+  bg-site bg-cover bg-no-repeat text-white overflow-hidden leading-relaxed flex flex-col xl:flex-row gap-x-8;
+}
+.x {
+  @apply grayscale-[1] absolute transition-[ease] duration-[filter,transform] delay-[0.3s] cursor-pointer origin-center border-[none] right-2.5 top-[15px] hover:grayscale-0 hover:scale-110;
+  background: none;
+}
+button.primary {
+  @apply inline-block text-[0.8rem] text-white transition-[background-color] duration-[0.1s] ease-[ease] box-border transition-all duration-[0.25s] ease-[ease] cursor-pointer shadow-[0_10px_20px_-10px_rgb(var(--vs-primary)_/_50%)] px-[25px] py-[13px] rounded-[17px] border-0 hover:shadow-[0_20px_20px_-10px_rgb(var(--vs-primary)_/_50%)] hover:translate-y-[-5px];
+  background: rgb(var(--vs-primary) / 100%);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
