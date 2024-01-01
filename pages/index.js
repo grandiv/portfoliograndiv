@@ -9,6 +9,9 @@ import { motion } from "framer-motion";
 // variants
 import { fadeIn } from "../variants";
 
+// react-typing-animation
+import { TypeAnimation } from "react-type-animation";
+
 const Home = () => {
   return (
     <div className="bg-primary/60 h-full">
@@ -35,8 +38,16 @@ const Home = () => {
             exit="hidden"
             className="h1"
           >
-            Accelerating Tech <br /> with{" "}
-            <span className="text-accent">Confidence</span>
+            Hi! my name is
+            <span className="text-accent"> Grandiv</span>
+            <br /> <span className="mr-4">I am a</span>
+            <TypeAnimation
+              sequence={["Student", 2000, "Developer", 2000]}
+              speed={50}
+              className="text-accent"
+              wrapper="span"
+              repeat={Infinity}
+            />
           </motion.h1>
           {/* subtitle */}
           <motion.p
@@ -46,8 +57,8 @@ const Home = () => {
             exit="hidden"
             className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16"
           >
-            Dedicated to bringing you cutting-edge innovations that redefine
-            possibilities and enhance everyday experiences
+            Welcome to my Digital Hub! 🚀 an exhibition of my journey in
+            development
           </motion.p>
           {/* button */}
           <motion.div

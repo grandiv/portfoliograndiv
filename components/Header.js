@@ -22,6 +22,14 @@ const Header = () => {
               priority={true}
             />
           </Link>
+          {/* CV button */}
+          <Link
+            href={"/CV_Muhammad Grandiv Lava Putra.pdf"}
+            passHref
+            className="border border-accent rounded-full px-6 py-2 hover:bg-accent hover:text-white transition-all duration-300"
+          >
+            Download my CV
+          </Link>
           {/* socials */}
           <Socials />
         </div>

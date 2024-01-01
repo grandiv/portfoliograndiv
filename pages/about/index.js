@@ -132,21 +132,23 @@ const About = () => {
             exit="hidden"
             className="h2"
           >
-            <span className="text-accent">Pioneering</span> Virtual Realms,{" "}
-            <span className="text-accent">Engineering</span> Excellence.
+            Commitment&nbsp; Efficiency &nbsp;Integrity
           </motion.h2>
           <motion.p
             variants={fadeIn("right", 0.4)}
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0"
+            className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0 text-justify"
           >
-            Grandiv is fueled by an unwavering passion for technology,
-            navigating its diverse realms with an unyielding curiosity. Aiming
-            for engineering excellence, he ardently embraces continuous
-            learning. As a dedicated individual, he is committed to refining
-            multifaceted skills across various domains.
+            Grandiv possesses an active, diligent, and persevering work ethic,
+            which enables him to excel both independently and collaboratively in
+            a team-oriented environment. He is highly averse to procrastination
+            and always strive to maintain efficient and timely completion of
+            tasks. His excellent interpersonal skills facilitate ease in
+            adapting to new situations and socializing with individuals from
+            diverse backgrounds. He prioritizes integrity in all aspects of his
+            personal and professional life.
           </motion.p>
           {/* counters */}
           <motion.div

@@ -11,10 +11,11 @@ import {
 // data
 const serviceData = [
   {
-    icon: <RxCrop />,
-    title: "Branding",
-    description: "COMING SOON",
-    path: "",
+    icon: <RxDesktop />,
+    title: "Development",
+    description:
+      "I develop websites, mobile apps, desktop apps, and other digital products.",
+    path: "/contact",
   },
   {
     icon: <RxPencil2 />,
@@ -24,24 +25,30 @@ const serviceData = [
     path: "/contact",
   },
   {
-    icon: <RxDesktop />,
-    title: "Development",
+    icon: <RxReader />,
+    title: "Data Science",
     description:
-      "I develop websites, mobile apps, desktop apps, and other digital products.",
+      "I do exploratory data analysis, machine learning, and other data science stuff.",
     path: "/contact",
   },
-  {
-    icon: <RxReader />,
-    title: "Copywriting",
-    description: "COMING SOON",
-    path: "",
-  },
-  {
-    icon: <RxRocket />,
-    title: "SEO",
-    description: "COMING SOON",
-    path: "",
-  },
+  // {
+  //   icon: <RxReader />,
+  //   title: "Copywriting",
+  //   description: "COMING SOON",
+  //   path: "",
+  // },
+  // {
+  //   icon: <RxRocket />,
+  //   title: "SEO",
+  //   description: "COMING SOON",
+  //   path: "",
+  // },
+  // {
+  //   icon: <RxCrop />,
+  //   title: "Branding",
+  //   description: "COMING SOON",
+  //   path: "",
+  // },
 ];
 
 // import swiper react components
