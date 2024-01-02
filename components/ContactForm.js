@@ -112,8 +112,9 @@ export default function ContactForm() {
       </motion.form>
       <div className="flex flex-col py-2 mx-auto text-center">
         {error &&
-          error.map((e) => (
+          error.map((e, index) => (
             <div
+              key={index}
               className={`${
                 success ? "text-accent" : "text-red-500"
               } px-5 py-2`}

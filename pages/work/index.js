@@ -45,7 +45,8 @@ const Work = () => {
               exit="hidden"
               className="mb-4 max-w-[400px] mx-auto lg:mx-0"
             >
-              Projects I've worked on. Click on the project to see more details.
+              Projects I&apos;ve worked on. Click on the project to see more
+              details.
             </motion.p>
           </div>
 
