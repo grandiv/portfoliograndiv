@@ -143,12 +143,7 @@ const About = () => {
           >
             Grandiv possesses an active, diligent, and persevering work ethic,
             which enables him to excel both independently and collaboratively in
-            a team-oriented environment. He is highly averse to procrastination
-            and always strive to maintain efficient and timely completion of
-            tasks. His excellent interpersonal skills facilitate ease in
-            adapting to new situations and socializing with individuals from
-            diverse backgrounds. He prioritizes integrity in all aspects of his
-            personal and professional life.
+            a team-oriented environment.
           </motion.p>
           {/* counters */}
           <motion.div
@@ -230,8 +225,9 @@ const About = () => {
           <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4">
             {aboutData.map((item, aboutIndex) => {
               return (
+                // eslint-disable-next-line react/jsx-key
                 <div
-                  key={`about-${aboutIndex}`}
+                  key={aboutIndex}
                   className={`${
                     index === aboutIndex &&
                     "text-accent after:w-[100%] after:bg-accent after:transition-all after:duration-300"
@@ -251,8 +247,9 @@ const About = () => {
           >
             {aboutData[index].info.map((item, infoIndex) => {
               return (
+                // eslint-disable-next-line react/jsx-key
                 <div
-                  key={`info-${infoIndex}`}
+                  key={infoIndex}
                   className="flex-1 flex flex-col md:flex-row 
                   max-w-max gap-x-2 items-center text-white/60"
                 >
@@ -264,10 +261,8 @@ const About = () => {
                     {/* icons */}
                     {item.icons?.map((icon, iconIndex) => {
                       return (
-                        <div
-                          key={`icon-${infoIndex}-${iconIndex}`}
-                          className="text-2xl text-white"
-                        >
+                        // eslint-disable-next-line react/jsx-key
+                        <div key={iconIndex} className="text-2xl text-white">
                           {icon}
                         </div>
                       );
