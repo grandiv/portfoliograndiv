@@ -1,3 +1,4 @@
+// imports
 import Image from "next/image";
 import Link from "next/link";
 import Socials from "../components/Socials";
