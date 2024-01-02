@@ -265,7 +265,7 @@ const About = () => {
                     {item.icons?.map((icon, iconIndex) => {
                       return (
                         <div
-                          key={`icon-${iconIndex}`}
+                          key={`icon-${infoIndex}-${iconIndex}`}
                           className="text-2xl text-white"
                         >
                           {icon}
