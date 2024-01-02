@@ -48,7 +48,7 @@ const aboutData = [
     ],
   },
   {
-    title: "sertificates",
+    title: "certificates",
     info: [
       {
         title: "Web Development - KMTETI FT Gadjah Mada University",
@@ -200,7 +200,7 @@ const About = () => {
                   Finished projects
                 </div>
               </div>
-              {/* sertificates */}
+              {/* certificates */}
               <div className="relative flex-1">
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
                   <CountUp start={0} end={2} duration={5} />
@@ -209,7 +209,7 @@ const About = () => {
                   className="text-xs uppercase tracking-[1px] leading-[1.4] 
                 max-w-[100px]"
                 >
-                  Sertificates
+                  Certificates
                 </div>
               </div>
             </div>
