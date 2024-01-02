@@ -30,7 +30,7 @@
   "devDependencies": {
     "autoprefixer": "^10.0.1",
     "css-loader": "^6.8.1",
-    "eslint": "^8",
+    "eslint": "^8.41.0",
     "eslint-config-next": "14.0.4",
     "postcss": "^8",
     "style-loader": "^3.3.3",
