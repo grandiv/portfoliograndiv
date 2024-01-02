@@ -231,7 +231,7 @@ const About = () => {
             {aboutData.map((item, aboutIndex) => {
               return (
                 <div
-                  key={aboutIndex}
+                  key={`about-${aboutIndex}`}
                   className={`${
                     index === aboutIndex &&
                     "text-accent after:w-[100%] after:bg-accent after:transition-all after:duration-300"
@@ -252,7 +252,7 @@ const About = () => {
             {aboutData[index].info.map((item, infoIndex) => {
               return (
                 <div
-                  key={infoIndex}
+                  key={`info-${infoIndex}`}
                   className="flex-1 flex flex-col md:flex-row 
                   max-w-max gap-x-2 items-center text-white/60"
                 >
@@ -264,7 +264,10 @@ const About = () => {
                     {/* icons */}
                     {item.icons?.map((icon, iconIndex) => {
                       return (
-                        <div key={iconIndex} className="text-2xl text-white">
+                        <div
+                          key={`icon-${iconIndex}`}
+                          className="text-2xl text-white"
+                        >
                           {icon}
                         </div>
                       );

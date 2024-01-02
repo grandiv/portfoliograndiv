@@ -11,6 +11,7 @@
   "dependencies": {
     "@tsparticles/engine": "^3.0.3",
     "@tsparticles/react": "^3.0.0",
+    "eslint": "^8.56.0",
     "framer-motion": "^10.16.16",
     "mongoose": "^8.0.3",
     "next": "14.0.4",
@@ -30,7 +31,6 @@
   "devDependencies": {
     "autoprefixer": "^10.0.1",
     "css-loader": "^6.8.1",
-    "eslint": "^7.28.0",
     "eslint-config-next": "14.0.4",
     "postcss": "^8",
     "style-loader": "^3.3.3",
