@@ -45,7 +45,7 @@ const ImageModal = ({
                 initial="hidden"
                 animate="show"
                 exit="hidden"
-                className="text-base leading-[1.3rem] px-0 py-2"
+                className="text-base leading-[1.3rem] px-0 py-2 text-justify tracking-widest"
               >
                 {description}
               </motion.p>
@@ -93,7 +93,7 @@ const ImageModal = ({
                           initial="hidden"
                           animate="show"
                           exit="hidden"
-                          className="text-base leading-[1.3rem] px-0 py-2"
+                          className="text-base leading-[1.3rem] px-0 py-2 max-w-[563px]"
                         >
                           {screenshot.ssdesc}
                         </motion.p>

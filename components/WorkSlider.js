@@ -4,31 +4,41 @@ const workSlides = {
     {
       images: [
         {
-          title: "title1",
-          description: "desc1",
+          title: "FOREAL (Food Rescue and Distribution)",
+          description:
+            "Desktop app to support Sustainable Development Goal 2: Zero Hunger by redistributing surplus food like from restaurants to people in need.",
           screenshots: [
             {
-              path: "/thumb1.jpg",
-              ssdesc: "ssdesc1",
+              path: "/foreal5.png",
+              ssdesc:
+                "Registration page to register an account that has access to all features of the app. This will ensure flexibility",
             },
             {
-              path: "/thumb2.jpg",
-              ssdesc: "ssdesc2",
+              path: "/foreal6.png",
+              ssdesc: "Login page for registered users",
             },
             {
-              path: "/thumb3.jpg",
-              ssdesc: "ssdesc3",
+              path: "/foreal1.png",
+              ssdesc:
+                "Main page of the app. This is where the user can choose one of the features",
             },
             {
-              path: "/thumb4.jpg",
-              ssdesc: "ssdesc4",
+              path: "/foreal2.png",
+              ssdesc:
+                "Donation page. Where users can input the required data to donate food",
             },
             {
-              path: "/thumb1.jpg",
-              ssdesc: "ssdesc1",
+              path: "/foreal3.png",
+              ssdesc:
+                "Recepient page. Where users can input the required data to receive food",
+            },
+            {
+              path: "/foreal4.png",
+              ssdesc:
+                "Volunteer page. Where users can volunteer to help distribute food. After clicking submit, users will be given a summary of the delivery",
             },
           ],
-          path: "/thumb1.jpg",
+          path: "/forealthumbnail.png",
         },
         {
           title: "title2",
