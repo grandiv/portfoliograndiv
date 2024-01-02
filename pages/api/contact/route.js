@@ -1,5 +1,5 @@
-import connectDB from "@/pages/lib/mongodb";
-import Contact from "@/pages/models/contact";
+import connectDB from "@/lib/mongodb";
+import Contact from "@/models/contact";
 import mongoose from "mongoose";
 
 export default async function handler(req, res) {
