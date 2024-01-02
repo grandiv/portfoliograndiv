@@ -228,12 +228,12 @@ const About = () => {
           className="flex flex-col w-full xl:max-w-[48%] h-[480px] overflow-y-scroll scrollbar-thin scrollbar-thumb-accent scrollbar-track-transparent"
         >
           <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4">
-            {aboutData.map((item, itemIndex) => {
+            {aboutData.map((item, aboutIndex) => {
               return (
                 <div
-                  key={`about-${itemIndex}`}
+                  key={aboutIndex}
                   className={`${
-                    index === itemIndex &&
+                    index === aboutIndex &&
                     "text-accent after:w-[100%] after:bg-accent after:transition-all after:duration-300"
                   } 
                   cursor-pointer capitalize xl:text-lg relative after:w-8 after:h-[2px]
@@ -249,10 +249,10 @@ const About = () => {
             className="py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4
           items-center xl:items-start"
           >
-            {aboutData[index].info.map((item, itemIndex) => {
+            {aboutData[index].info.map((item, infoIndex) => {
               return (
                 <div
-                  key={`info-${itemIndex}`}
+                  key={infoIndex}
                   className="flex-1 flex flex-col md:flex-row 
                   max-w-max gap-x-2 items-center text-white/60"
                 >
@@ -264,12 +264,8 @@ const About = () => {
                     {/* icons */}
                     {item.icons?.map((icon, iconIndex) => {
                       return (
-                        <div
-                          key={`icon-${iconIndex}`}
-                          className="text-2xl text-white"
-                        >
-                          {" "}
-                          {icon}{" "}
+                        <div key={iconIndex} className="text-2xl text-white">
+                          {icon}
                         </div>
                       );
                     })}
