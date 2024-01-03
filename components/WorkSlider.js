@@ -38,7 +38,7 @@ const workSlides = {
                 "Volunteer page. Where users can volunteer to help distribute food. After clicking submit, users will be given a summary of the delivery",
             },
           ],
-          path: "/forealthumbnail.png",
+          path: "/forealthumbnailfixed.png",
         },
         {
           title: "title2",
