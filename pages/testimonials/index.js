@@ -5,9 +5,22 @@ import TestimonialSlider from "../../components/TestimonialSlider";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../variants";
 
+// react helmet
+import { Helmet } from "react-helmet";
+
 const Testimonials = () => {
   return (
     <div className="h-full bg-primary/30 py-32 text-center">
+      <Helmet>
+        <title>Grandiv | Testimonials</title>
+        <link
+          id="favicon"
+          rel="icon"
+          type="image/x-icon"
+          href="/icon.png"
+          data-react-helmet="true"
+        />
+      </Helmet>
       <div className="container mx-auto h-full flex flex-col justify-center">
         {/* title */}
         <motion.h2

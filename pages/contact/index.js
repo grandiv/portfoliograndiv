@@ -6,9 +6,22 @@ import { motion } from "framer-motion";
 // variants
 import { fadeIn } from "../../variants";
 
+// react helmet
+import { Helmet } from "react-helmet";
+
 const Contact = () => {
   return (
     <div className="h-full bg-primary/30">
+      <Helmet>
+        <title>Grandiv | Contact</title>
+        <link
+          id="favicon"
+          rel="icon"
+          type="image/x-icon"
+          href="/icon.png"
+          data-react-helmet="true"
+        />
+      </Helmet>
       <div
         className="container mx-auto py-32 text-center xl:text-left flex
       items-center justify-center h-full"

@@ -10,6 +10,9 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../variants";
 
+// react helmet
+import { Helmet } from "react-helmet";
+
 const Work = () => {
   const [selectedImage, setSelectedImage] = useState(null);
 
@@ -22,6 +25,16 @@ const Work = () => {
   };
   return (
     <div className="h-screen bg-primary/30 py-36 flex items-center">
+      <Helmet>
+        <title>Grandiv | Work</title>
+        <link
+          id="favicon"
+          rel="icon"
+          type="image/x-icon"
+          href="/icon.png"
+          data-react-helmet="true"
+        />
+      </Helmet>
       <div className="container mx-auto my-auto">
         <div className="flex flex-col xl:flex-row gap-x-8">
           {/* text */}

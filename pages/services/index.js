@@ -6,9 +6,22 @@ import Bulb from "../../components/Bulb";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../variants";
 
+// react helmet
+import { Helmet } from "react-helmet";
+
 const Services = () => {
   return (
     <div className="h-full bg-primary/30 py-36 flex items-center">
+      <Helmet>
+        <title>Grandiv | Services</title>
+        <link
+          id="favicon"
+          rel="icon"
+          type="image/x-icon"
+          href="/icon.png"
+          data-react-helmet="true"
+        />
+      </Helmet>
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row gap-x-8">
           {/* text */}

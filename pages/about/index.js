@@ -4,6 +4,10 @@ import React, { useState } from "react";
 // icons
 import { FaHtml5, FaCss3, FaJs, FaReact } from "react-icons/fa";
 
+// react helmet
+import { Helmet } from "react-helmet";
+import favicon from "../../public/favicon.ico";
+
 import {
   SiNextdotjs,
   SiFramer,
@@ -111,6 +115,16 @@ const About = () => {
   console.log(index);
   return (
     <div className="h-full bg-primary/30 py-32 text-center xl:text-left">
+      <Helmet>
+        <title>Grandiv | About</title>
+        <link
+          id="favicon"
+          rel="icon"
+          type="image/x-icon"
+          href="/icon.png"
+          data-react-helmet="true"
+        />
+      </Helmet>
       {/* avatar img */}
       <motion.div
         variants={fadeIn("up", 0.5)}

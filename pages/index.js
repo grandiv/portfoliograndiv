@@ -12,9 +12,22 @@ import { fadeIn } from "../variants";
 // react-typing-animation
 import { TypeAnimation } from "react-type-animation";
 
+// react helmet
+import { Helmet } from "react-helmet";
+
 const Home = () => {
   return (
     <div className="bg-primary/60 h-full">
+      <Helmet>
+        <title>Grandiv | Home</title>
+        <link
+          id="favicon"
+          rel="icon"
+          type="image/x-icon"
+          href="/icon.png"
+          data-react-helmet="true"
+        />
+      </Helmet>
       {/* bg img */}
       <div
         className="bg-none xl:bg-explosion xl:bg-cover xl:bg-right
