@@ -21,7 +21,7 @@ const Header = () => {
           </Link>
           {/* CV button */}
           <Link
-            href={"/CV_Muhammad Grandiv Lava Putra.pdf"}
+            href={"/Muhammad Grandiv Lava Putra_CV.pdf"}
             passHref
             className="border border-accent rounded-full px-3 py-1 text-xs lg:text-sm hover:bg-accent hover:text-white transition-all duration-300"
           >
