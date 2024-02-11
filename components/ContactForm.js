@@ -55,10 +55,10 @@ export default function ContactForm() {
         initial="hidden"
         animate="show"
         exit="hidden"
-        className="flex-1 flex flex-col gap-6 w-full mx-auto"
+        className="flex-1 flex flex-col gap-6 w-full mx-auto max-sm:items-center"
       >
         {/* input group */}
-        <div className="flex gap-x-6 w-full">
+        <div className="flex gap-x-6 w-full max-sm:flex-col max-sm:gap-6">
           <input
             onChange={(e) => setName(e.target.value)}
             value={name}
@@ -94,7 +94,7 @@ export default function ContactForm() {
         <button
           className="btn rounded-full border border-white/50 max-w-[178px]
                 px-8 transition-all duration-300 flex items-center justify-center
-                overflow-hidden hover:border-accent group"
+                overflow-hidden hover:border-accent group max-sm:h-[5.5vh] max-sm:w-50%"
           type="submit"
         >
           <span
@@ -110,14 +110,14 @@ export default function ContactForm() {
           />
         </button>
       </motion.form>
-      <div className="flex flex-col py-2 mx-auto text-center">
+      <div className="flex-col flex py-2 mx-auto text-center max-sm:w-full max-sm:grid max-sm:grid-cols-2 max-sm:grid-rows-2">
         {error &&
           error.map((e, index) => (
             <div
               key={index}
               className={`${
                 success ? "text-accent" : "text-red-500"
-              } px-5 py-2`}
+              } px-5 py-1 max-sm:py-[0.5vh] max-sm:text-[3.1vw]`}
             >
               {e}
             </div>

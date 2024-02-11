@@ -4,7 +4,7 @@ const workSlides = {
     {
       images: [
         {
-          title: "FOREAL (Food Rescue and Distribution)",
+          title: "FOREAL (Food Rescue and Distribution) Desktop Version",
           description:
             "Desktop app to support Sustainable Development Goal 2: Zero Hunger by redistributing surplus food like from restaurants to people in need.",
           screenshots: [
@@ -41,27 +41,35 @@ const workSlides = {
           path: "/forealthumbnailfixed.png",
         },
         {
-          title: "title2",
-          description: "desc2",
+          title: "FOREAL (Food Rescue and Distribution) Android Version",
+          description:
+            "Mobile app to support Sustainable Development Goal 2: Zero Hunger by redistributing surplus food like from restaurants to people in need.",
           screenshots: [
             {
-              path: "/thumb2.jpg",
-              ssdesc: "ssdesc2",
+              path: "/forealandro1.png",
+              ssdesc:
+                "Integrated with Firebase Authentication to login with Google",
             },
             {
-              path: "/thumb1.jpg",
-              ssdesc: "ssdesc1",
+              path: "/forealandro2.png",
+              ssdesc:
+                "Dashboard UI to navigate to different features of the app",
             },
             {
-              path: "/thumb3.jpg",
-              ssdesc: "ssdesc3",
+              path: "/forealandro3.png",
+              ssdesc: "Donation feature to donate food to people in need",
             },
             {
-              path: "/thumb4.jpg",
-              ssdesc: "ssdesc4",
+              path: "/forealandro4.png",
+              ssdesc: "Request feature to input recipient's data",
+            },
+            {
+              path: "/forealandro5.png",
+              ssdesc:
+                "Volunteer page with dropdown to select the food to deliver",
             },
           ],
-          path: "/thumb2.jpg",
+          path: "/logoforealmobile.png",
         },
         {
           title: "title3",
@@ -231,6 +239,11 @@ const WorkSlider = ({ handleImageClick }) => {
   return (
     <div>
       <Swiper
+        breakpoints={{
+          320: {
+            slidesPerView: 1,
+          },
+        }}
         spaceBetween={10}
         pagination={{
           clickable: true,
@@ -239,7 +252,7 @@ const WorkSlider = ({ handleImageClick }) => {
         className="h-[280px] sm:h-[480px]"
       >
         {workSlides.slides.map((slide, slideIndex) => (
-          <SwiperSlide key={slideIndex}>
+          <SwiperSlide key={slideIndex} className="">
             <div className="grid grid-cols-2 grid-rows-2 gap-4 cursor-pointer">
               {slide.images.map((image, imageIndex) => (
                 <div

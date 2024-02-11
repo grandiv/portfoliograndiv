@@ -49,7 +49,7 @@ const Home = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="h1"
+            className="h1 max-sm:text-[7.75vw]"
           >
             Hi! my name is
             <span className="text-accent"> Grandiv</span>
@@ -68,7 +68,7 @@ const Home = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16"
+            className="max-w-sm max-sm:text-[4.25vw] xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16"
           >
             Welcome to my Digital Hub! 🚀 an exhibition of my journey in
             development
@@ -101,7 +101,7 @@ const Home = () => {
         animate="show"
         exit="hidden"
         transition={{ duration: 1, ease: "easeInOut" }}
-        className="w-full h-full max-w-[420px] max-h-[420px] absolute -bottom-32
+        className="w-full max-sm:hidden h-full max-w-[420px] max-h-[420px] absolute -bottom-32
           lg:bottom-0 lg:right-[20%]"
       >
         <Avatar />

@@ -34,7 +34,7 @@ const Services = () => {
               initial="hidden"
               animate="show"
               exit="hidden"
-              className="h2 xl:mt-8"
+              className="h2 xl:mt-8 max-sm:text-[7.75vw]"
             >
               My services <span className="text-accent">.</span>
             </motion.h2>
@@ -43,7 +43,7 @@ const Services = () => {
               initial="hidden"
               animate="show"
               exit="hidden"
-              className="mb-4 max-w-[400px] mx-auto lg:mx-0"
+              className="mb-4 max-w-[400px] mx-auto lg:mx-0 max-sm:text-[3.75vw]"
             >
               Here are some of the services I provide. If you are interested or
               have any questions, feel free to contact me.

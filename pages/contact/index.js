@@ -34,7 +34,7 @@ const Contact = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="h2 text-center mb-12"
+            className="h2 text-center mb-12 max-sm:text-[7.75vw]"
           >
             Connect with <span className="text-accent">Grandiv.</span>
           </motion.h2>

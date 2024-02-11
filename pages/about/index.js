@@ -18,6 +18,8 @@ import {
   SiTailwindcss,
   SiPython,
   SiMicrosoftsqlserver,
+  SiKotlin,
+  SiFirebase,
 } from "react-icons/si";
 
 //  data
@@ -39,7 +41,13 @@ const aboutData = [
       },
       {
         title: "Software Engineering",
-        icons: [<SiCplusplus />, <SiCsharp />, <SiMicrosoftsqlserver />],
+        icons: [
+          <SiCplusplus />,
+          <SiCsharp />,
+          <SiMicrosoftsqlserver />,
+          <SiKotlin />,
+          <SiFirebase />,
+        ],
       },
       {
         title: "Digital Content",
@@ -55,6 +63,10 @@ const aboutData = [
     title: "certificates",
     info: [
       {
+        title: "Mobile Development - KMTETI FT Gadjah Mada University",
+        stage: "2024",
+      },
+      {
         title: "Web Development - KMTETI FT Gadjah Mada University",
         stage: "2023",
       },
@@ -69,16 +81,25 @@ const aboutData = [
     info: [
       {
         title:
-          "Software Engineer - Desktop Application FOREAL (Food Rescue and Allocation) for OOP Final Project - 2023",
+          "Software Engineer - Mobile Application FOREAL (Food Rescue and Allocation) - 2024",
         stage: "",
       },
       {
-        title: "Web Developer - CRUD To-Do Web Application - 2023",
+        title: "Web Developer - Responsive Event Website for NESCO UGM- 2024",
         stage: "",
       },
       {
         title:
-          "Data Science - Machine Learning Model to Predict Student Performance Based on Demographic Student Data - 2023",
+          "Software Engineer - Desktop Application FOREAL (Food Rescue and Allocation) for OOP Final Project - 2023",
+        stage: "",
+      },
+      {
+        title:
+          "Data Scientist - Machine Learning Model to Predict Student Performance Based on Demographic Student Data - 2023",
+        stage: "",
+      },
+      {
+        title: "Web Developer - CRUD To-Do Web Application - 2023",
         stage: "",
       },
     ],
@@ -132,12 +153,12 @@ const About = () => {
         animate="show"
         exit="hidden"
         transition={{ duration: 1, ease: "easeInOut" }}
-        className="w-full h-full max-w-[420px] max-h-[420px] absolute -bottom-32
+        className="w-full h-full max-w-[320px] max-h-[320px] absolute -bottom-32
           lg:bottom-0 lg:right-[20%]"
       >
         <AvatarAbout />
       </motion.div>
-      <div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6">
+      <div className="container mx-auto h-full flex flex-col xl:flex-row items-center gap-x-6">
         {/* text */}
         <div className="flex-1 flex flex-col justify-center">
           <motion.h2
@@ -145,7 +166,7 @@ const About = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="h2"
+            className="h2 max-sm:text-[6vw]"
           >
             Commitment&nbsp; Efficiency &nbsp;Integrity
           </motion.h2>
@@ -154,7 +175,7 @@ const About = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0 text-justify"
+            className="max-sm:text-[3.75vw] max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0 text-justify"
           >
             Grandiv possesses an active, diligent, and persevering work ethic,
             which enables him to excel both independently and collaboratively in
@@ -190,7 +211,7 @@ const About = () => {
               after:bg-white/10 after:absolute after:top-0 after:right-0"
               >
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <CountUp start={0} end={2} duration={5} />
+                  <CountUp start={0} end={1} duration={5} />
                 </div>
                 <div
                   className="text-xs uppercase tracking-[1px] leading-[1.4] 
@@ -205,7 +226,7 @@ const About = () => {
               after:bg-white/10 after:absolute after:top-0 after:right-0"
               >
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <CountUp start={0} end={4} duration={5} />
+                  <CountUp start={0} end={6} duration={5} />
                 </div>
                 <div
                   className="text-xs uppercase tracking-[1px] leading-[1.4] 
@@ -217,7 +238,7 @@ const About = () => {
               {/* certificates */}
               <div className="relative flex-1">
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <CountUp start={0} end={2} duration={5} />
+                  <CountUp start={0} end={3} duration={5} />
                 </div>
                 <div
                   className="text-xs uppercase tracking-[1px] leading-[1.4] 
@@ -235,7 +256,7 @@ const About = () => {
           initial="hidden"
           animate="show"
           exit="hidden"
-          className="flex flex-col w-full xl:max-w-[48%] h-[480px] overflow-y-scroll scrollbar-thin scrollbar-thumb-accent scrollbar-track-transparent"
+          className="flex flex-col w-full xl:max-w-[48%] h-[480px]"
         >
           <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4">
             {aboutData.map((item, aboutIndex) => {
@@ -247,7 +268,7 @@ const About = () => {
                     index === aboutIndex &&
                     "text-accent after:w-[100%] after:bg-accent after:transition-all after:duration-300"
                   } 
-                  cursor-pointer capitalize xl:text-lg relative after:w-8 after:h-[2px]
+                  cursor-pointer capitalize max-sm:text-[3.75vw] xl:text-lg relative after:w-8 after:h-[2px]
                   after:bg-white after:absolute after:-bottom-1 after:left-0`}
                   onClick={() => setIndex(aboutIndex)}
                 >
@@ -258,7 +279,7 @@ const About = () => {
           </div>
           <div
             className="py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4
-          items-center xl:items-start"
+          items-center xl:items-start overflow-y-scroll scrollbar-thin scrollbar-thumb-accent scrollbar-track-transparent"
           >
             {aboutData[index].info.map((item, infoIndex) => {
               return (
@@ -269,7 +290,9 @@ const About = () => {
                   max-w-max gap-x-2 items-center text-white/60"
                 >
                   {/* title */}
-                  <div className="font-light mb-2 md:mb-0">{item.title}</div>
+                  <div className="font-light max-sm:text-[3.75vw] mb-2 md:mb-0">
+                    {item.title}
+                  </div>
                   <div className="hidden md:flex"></div>
                   <div>{item.stage}</div>
                   <div className="flex gap-x-4">
@@ -277,7 +300,10 @@ const About = () => {
                     {item.icons?.map((icon, iconIndex) => {
                       return (
                         // eslint-disable-next-line react/jsx-key
-                        <div key={iconIndex} className="text-2xl text-white">
+                        <div
+                          key={iconIndex}
+                          className="text-[4.75vw] text-white"
+                        >
                           {icon}
                         </div>
                       );

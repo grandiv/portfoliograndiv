@@ -36,7 +36,7 @@ const ImageModal = ({
                 initial="hidden"
                 animate="show"
                 exit="hidden"
-                className="font-semibold xl:text-[32px] pb-4 text-[16px]"
+                className="font-semibold xl:text-[32px] pb-4 text-[16px] max-sm:text-[5vw]"
               >
                 {title}
               </motion.h2>
@@ -45,7 +45,7 @@ const ImageModal = ({
                 initial="hidden"
                 animate="show"
                 exit="hidden"
-                className="xl:text-base text-[12px] leading-[1.3rem] px-0 py-2 text-justify tracking-widest"
+                className="xl:text-base max-sm:text-[3vw] text-[12px] leading-[1.3rem] px-0 py-2 text-justify tracking-widest"
               >
                 {description}
               </motion.p>

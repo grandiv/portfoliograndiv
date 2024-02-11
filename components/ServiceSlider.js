@@ -102,16 +102,20 @@ const ServiceSlider = () => {
             hover:bg-primary/80 transition-all duration-300"
               >
                 {/* icon */}
-                <div className="text-4xl text-accent mb-4">{item.icon}</div>
+                <div className="text-4xl max-sm:text-[7vw] text-accent mb-4">
+                  {item.icon}
+                </div>
                 {/* title & desc */}
                 <div className="mb-8">
-                  <div className="mb-2 text-lg">{item.title}</div>
-                  <p className="max-w-[350px] leading-normal">
+                  <div className="mb-2 text-lg max-sm:text-[4.75vw]">
+                    {item.title}
+                  </div>
+                  <p className="max-w-[350px] leading-normal max-sm:text-[4vw]">
                     {item.description}
                   </p>
                 </div>
                 {/* arrow */}
-                <div className="text-3xl">
+                <div className="text-3xl max-sm:text-[7vw]">
                   <RxArrowTopRight
                     className="group-hover:rotate-45 
                   group-hover:text-accent transition-all duration-300"
