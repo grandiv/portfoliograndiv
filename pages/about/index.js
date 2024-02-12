@@ -302,7 +302,7 @@ const About = () => {
                         // eslint-disable-next-line react/jsx-key
                         <div
                           key={iconIndex}
-                          className="text-[4.75vw] text-white"
+                          className="max-sm:text-[4.75vw] text-2xl text-white"
                         >
                           {icon}
                         </div>
